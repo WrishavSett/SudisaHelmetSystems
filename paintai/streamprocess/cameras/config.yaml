@@ -1,0 +1,17 @@
+models:
+  tracker: "osnet_x0_25_msmt17.pt"
+  detection: "model01122023"
+
+url:
+  upload: 'http://localhost:4002/api/v1/upload'
+  save: 'http://localhost:4002/api/v1/upload/save'
+
+output:
+  folder: 'images'
+
+rabbitmq:
+  url: '10.12.1.101'
+  queue: 'videobuffer'
+  username: 'root'
+  password: 'rabbit'
+  port: 5672
