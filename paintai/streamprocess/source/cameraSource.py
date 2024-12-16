@@ -22,6 +22,11 @@ class TESTFFMPEGC():
             "alarm_type": "Warning",
             "rtsp_url" : "rtsp://localhost:18554/mystream"
         }
+        if not os.path.exists(self.camera_config['imgdir']):
+            os.makedirs(self.camera_config['imgdir'])
+
+        if not os.path.exists(self.camera_config['logdir']):
+            os.makedirs(self.camera_config['logdir'])
         # logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s - %(threadName)s - %(levelname)s - %(message)s')
         self.logger = logging.getLogger(self.camera_config['camera'])
         self.logger.setLevel(logging.DEBUG)
@@ -59,8 +64,8 @@ class TESTFFMPEGC():
             self.logger.error(e)
             raise e
         
-        if not os.path.exists(self.img_folder):
-            os.makedirs(self.img_folder)
+        if not os.path.exists(os.path.join(self.camera_config['imgdir'], self.img_folder)):
+            os.makedirs(os.path.join(self.camera_config['imgdir'], self.img_folder))
 
     def enqueue_frame_buffer(self):
         self.process1 = (

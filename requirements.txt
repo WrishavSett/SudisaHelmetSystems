@@ -86,7 +86,7 @@ torchvision==0.15.2
 tqdm==4.66.1
 typing_extensions==4.7.1
 tzdata==2023.3
-ultralytics==8.0.160
+#ultralytics==8.0.160
 urllib3==1.26.16
 virtualenv==20.24.4
 wcwidth==0.2.6
@@ -95,3 +95,4 @@ win32-setctime==1.1.0
 wrapt==1.14.1
 yacs==0.1.8
 django
+#boxmot
