@@ -16,10 +16,10 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 ## Project Related Settings
-NSSMPATH = 'D:/Rohit/Sudisa/safety/paintshop/paintshopproject/nssm/win64/nssm.exe' 
-PYTHONVENVPATH = 'D:/Rohit/Sudisa/safety/paintshop/env/Scripts/python.exe'
-APPDIR = 'D:/Rohit/Sudisa/safety/paintshop/paintshopproject/paintai/streamprocess/cameras'
-FFMPEGDIR = 'D:/Rohit/Sudisa/safety/paintshop/paintshopproject/ffmpegdir/bin'
+NSSMPATH = 'D:/RohitDa/SudisaHelmetSystems/nssm-2.24/nssm-2.24/win64/nssm.exe'
+PYTHONVENVPATH = 'D:/RohitDa/SudisaHelmetSystems/venv/Scripts/python.exe'
+APPDIR = 'D:/RohitDa/SudisaHelmetSystems/paintai/streamprocess/cameras'
+FFMPEGDIR = 'D:/RohitDa/SudisaHelmetSystems/Ffmpeg/bin'
 
 UPDATEDURATION = 10 # in Seconds
 # Quick-start development settings - unsuitable for production

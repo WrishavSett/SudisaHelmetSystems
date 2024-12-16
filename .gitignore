@@ -3,3 +3,8 @@ ffmpegdir/
 logs/
 imgs/
 yolomodel/
+
+.idea/
+Ffmpeg/
+nssm-2.24/
+venv/

@@ -58,7 +58,8 @@ class Infer:
             confs = tracks[:, 5]
             clss = tracks[:, 6].astype('int') # float64 to int
         except Exception as e:
-            raise Exception(str(e))
+            return None
+            # raise Exception(str(e))
         if tracks.shape[0] != 0:
             for xyxy, id, conf, cls in zip(xyxys, ids, confs, clss):
                 if(cls == 0):

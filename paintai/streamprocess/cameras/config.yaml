@@ -1,6 +1,6 @@
 models:
   tracker: "osnet_x0_25_msmt17.pt"
-  detection: "model01122023"
+  detection: "small300"
 
 url:
   upload: 'http://localhost:4002/api/v1/upload'

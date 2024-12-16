@@ -25,7 +25,7 @@ urlpatterns = [
     path('getacamerascount', views.get_total_camera_count, name='get_total_camera_count'),
     path('getactivecamerascount', views.get_total_active_camera_count, name='get_total_active_camera_count'),
 
-    
+
     path('deleteproduct/<int:product_id>', views.soft_delete_product, name='soft_delete_product'),
 
     path('getallproduction', views.get_all_production, name='get_all_production'),
